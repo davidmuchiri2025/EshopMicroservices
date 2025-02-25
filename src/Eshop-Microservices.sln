@@ -4,16 +4,46 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8949B40C-7994-4C2B-AD54-2973B4346181}"
+	ProjectSection(SolutionItems) = preProject
+		.ignore = .ignore
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{3A3A0EB7-A93D-4826-A676-0D5E745AB24B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{21EF0C9E-16DC-4BFD-A4D1-0758DB329445}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{23E5B691-7B3B-461D-AAD1-7DCB9FAA2796}"
+	ProjectSection(SolutionItems) = preProject
+		.ignore = .ignore
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{7C3DEBA6-A8CF-46DF-824B-373CAECBD0F9}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4A9D6098-5449-43CD-8512-D96418110452}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behaviours", "Behaviours", "{00A01029-0C77-4A51-A5D3-1C0F2C8A32F9}"
+	ProjectSection(SolutionItems) = preProject
+		Loggingbehaviour.cs = Loggingbehaviour.cs
+		ValidationBehaviour.cs = ValidationBehaviour.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exceptions", "Exceptions", "{E73E8666-4803-4C6A-941B-0C9CEFDB7173}"
+	ProjectSection(SolutionItems) = preProject
+		BadExceptionHandler.cs = BadExceptionHandler.cs
+		InternalServerException.cs = InternalServerException.cs
+		NotFoundException.cs = NotFoundException.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pagination", "Pagination", "{1B0F2B20-AE6B-46B9-AA9F-4E18F21E8912}"
+	ProjectSection(SolutionItems) = preProject
+		PaginationRequest.cs = PaginationRequest.cs
+		PaginationResult.cs = PaginationResult.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Handler", "Handler", "{48F2844E-D5E3-40AA-9F9D-7E29F1B94DDF}"
+	ProjectSection(SolutionItems) = preProject
+		CustomExceptionHandler.cs = CustomExceptionHandler.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +71,10 @@ Global
 		{3A3A0EB7-A93D-4826-A676-0D5E745AB24B} = {8949B40C-7994-4C2B-AD54-2973B4346181}
 		{21EF0C9E-16DC-4BFD-A4D1-0758DB329445} = {3A3A0EB7-A93D-4826-A676-0D5E745AB24B}
 		{7C3DEBA6-A8CF-46DF-824B-373CAECBD0F9} = {23E5B691-7B3B-461D-AAD1-7DCB9FAA2796}
+		{00A01029-0C77-4A51-A5D3-1C0F2C8A32F9} = {23E5B691-7B3B-461D-AAD1-7DCB9FAA2796}
+		{E73E8666-4803-4C6A-941B-0C9CEFDB7173} = {23E5B691-7B3B-461D-AAD1-7DCB9FAA2796}
+		{1B0F2B20-AE6B-46B9-AA9F-4E18F21E8912} = {23E5B691-7B3B-461D-AAD1-7DCB9FAA2796}
+		{48F2844E-D5E3-40AA-9F9D-7E29F1B94DDF} = {E73E8666-4803-4C6A-941B-0C9CEFDB7173}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E649F197-1BAE-40A5-AF19-7F63DDD4357D}
